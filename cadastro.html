@@ -8,7 +8,7 @@
 </head>
 <body>
     
-    <form action="inserir.php" method="post">
+    <form action="crud.php" method="post">
         Digite a matrícula:
         <input type="text" name="Matricula" id="Matricula">
         <br> <br>
@@ -17,21 +17,18 @@
         <br> <br>
         Digite sua idade:
         <input size="9" type="text" name="Idade">
-        <input type="submit" value="GRAVAR">
 
        
+        <input type="submit" value="Inserir" name="inserir">
+        <input type="submit" value="Excluir" name="excluir">
+        <input type="submit" value="Alterar" name="alterar">
+        <input type="submit" value="Listar" name="listar">
+
+
+
     </form>
 
-    <button onclick="Excluir();">
-        Excluir
-    </button>
+    
 </body>
 
-<script>
-    function Excluir()
-    {
-        M = Matricula.value
-        window.open("excluir.php?M="+M, "_self")
-    }
-</script>
 </html>
